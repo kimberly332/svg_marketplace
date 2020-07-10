@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+	font-weight: bold;
+	text-align: center;
+}
+
+body {
+	/*background-color: #ECECEC;*/
+	background-image: url(../images/city.jpg);
+  	/* Create the parallax scrolling effect */
+ 	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+
+	font-family: 'Dosis', sans-serif;
+	line-height: 1.5;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+img, svg {
+  	width: 70%;
+	transition: all 0.25s;
+	filter: grayscale(100%);
+}
+
+img:hover {
+  	transform: scale(1.25, 1.25);
+  	filter: grayscale(0);
+}
+
+span {
+	float: right;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	transition: color .5s;
+	position: relative;
+	margin-right: -0.5%;
+}
+
+span:hover {
+	color: rgb(255, 255, 255, 0);
+}
+
+#heading {
+	filter: grayscale(0);
+}
+
+#scrollTop {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#scrollTop a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;	
+}
+
+#scrollTop a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	font-size: 12px;
+	text-align: center;
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+.title {
+	text-align: center;
+	padding-bottom: 10px;
+	width: 300px;
+	height: 20px;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto; /*centers the container*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.mainIconContainer {
+	width: 960px;
+	margin: 0 auto; /*centers the container*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inner {
+	width: 960px;
+	color: white;
+	background-color: #26bb83;
+	margin-bottom: 0.5em;
+	/* trbl */
+	padding: 1em 2.5em 1em 2.5em;
+	border-radius: 10px;
+	clip-path: circle(4% at 96% 15%);
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+.inner:hover {
+	clip-path: circle(75%);
+	background: #282828;
+}
+
+
+.mainIcon {
+	display: inline-table;
+	width: 280px;
+	height: 440px;
+	border: 3px;
+	border-style: solid;
+	border-color: white;
+	margin: 7px;
+	background: rgba(255, 255, 255, 0.8); 
+}
+
+.mainIconImage {
+	width: 300px;
+	height: 215px;
+	cursor: pointer;
+}
+
+.grayscale {
+	filter: grayscale(0);
+}
+
+.center {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.text {
+	padding: 13px;
+}
+
+.mainIconDescription {
+	display: block;
+	width: 280px;
+	height: 150px;
+	margin: 0 auto;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+path {
+	stroke: #fff;
+	stroke-dasharray: 1800;
+	opacity: 10;
+	animation: animate 3s cubic-bezier(0.5, 0.2, 1, .1);
+}
+
+@keyframes animate {
+  0% {
+  	opacity: 0;
+  	fill: none;
+  	stroke-dashoffset: 1800;
+  }
+  30% {
+  	opacity: 10;
+  	fill: none;
+  	stroke-dashoffset: 1800;
+  }
+  90% {
+  	fill: rgba(255, 255, 255, 0);
+  }
+  100% {
+  	opacity: 10;
+  	fill: rgba(255, 255, 255, 1);
+  	stroke-dashoffset: 0;
+  }
+}
+
+#clock:hover {
+	animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

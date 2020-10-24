@@ -2,7 +2,7 @@
 
 An one-page web design for SVG Marketplace.
 
-[Simple DEMO] (https://kimberly332.github.io/svg_marketplace)
+[Simple DEMO](https://kimberly332.github.io/svg_marketplace)
 
 
 ## Description
